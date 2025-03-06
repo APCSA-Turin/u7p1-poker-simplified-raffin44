@@ -57,7 +57,7 @@ public class Player {
 
         if (allCards.size() == 5) {
             if (royalFlush()) {
-                return "Royal Flush"; // Royal Flush check
+                return "Royal Flush"; // Royal Flush Check
             } 
             if (straightFlush()) {
                 return "Straight Flush"; // Straight Flush check
