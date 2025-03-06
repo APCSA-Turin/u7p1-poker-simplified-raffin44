@@ -2,9 +2,11 @@ package com.example.project;
 import java.util.ArrayList;
 import java.util.Collections;
 
+
 // Represents a deck of playing cards
 public class Deck{
     private ArrayList<Card> cards;
+
 
 // Constructor initializes and shuffles the deck
     public Deck(){
@@ -12,6 +14,7 @@ public class Deck{
         initializeDeck();
         shuffleDeck();
     }
+
 
 // Returns the list of cards in the deck    
     public ArrayList<Card> getCards(){
@@ -28,9 +31,11 @@ public class Deck{
         }
     }
 
+
     public  void shuffleDeck(){ //You can use the Collections library or another method. You do not have to create your own shuffle algorithm
         Collections.shuffle(cards);
     }
+
 
     public  Card drawCard(){
         if(cards.size() == 0){
@@ -39,11 +44,9 @@ public class Deck{
         return cards.remove(0);
     }
 
+
     public  boolean isEmpty(){
         return cards.isEmpty();
     }
-
-   
-
 
 }
